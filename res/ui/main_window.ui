@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>790</width>
+    <height>705</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>70</y>
+      <width>691</width>
+      <height>561</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>主界面</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>581</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>微软雅黑</family>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>订单信息</string>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>40</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>工程单号：</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>100</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>校验位数：</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="get_check_num_edit">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>100</y>
+         <width>81</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="get_order_name_combo">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+       <property name="currentText">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>请选择</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>210</y>
+        <width>581</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>放卡</string>
+      </property>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>200</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>后一张卡:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="before_line">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>130</y>
+         <width>361</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="after_line">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>200</y>
+         <width>361</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>130</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>前一张卡:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="target_line">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>60</y>
+         <width>361</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>16</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>60</y>
+         <width>91</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>待放回卡:</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>订单管理</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>30</y>
+        <width>211</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>订单配置</string>
+      </property>
+      <widget class="QLineEdit" name="selected_order_edit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>订单号</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="selected_checknum_edit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Normal</enum>
+       </property>
+       <property name="placeholderText">
+        <string>校验位数</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="add_order_btn">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>300</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="update_order_btn">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>250</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="remove_order_btn">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>350</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="clear_order_btn">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>400</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>清空</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>411</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>订单信息</string>
+      </property>
+      <widget class="QTableWidget" name="order_table">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>411</width>
+         <height>421</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>用户管理</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>411</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>用户信息</string>
+      </property>
+      <widget class="QTableWidget" name="user_table">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>411</width>
+         <height>421</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>30</y>
+        <width>211</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>用户配置</string>
+      </property>
+      <widget class="QLineEdit" name="selected_user_edit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="placeholderText">
+        <string>用户名</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="selected_password_edit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+       <property name="placeholderText">
+        <string>密码</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="selected_combo_box">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>190</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="currentText">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>请选择</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="add_user_btn">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>300</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="update_user_btn">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>250</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>修改</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="remove_user_btn">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>350</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>删除</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="clear_user_btn">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>400</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>清空</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="current_user_edit">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>20</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="switch_user_btn">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>20</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>切换用户</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>790</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="admin_action">
+   <property name="text">
+    <string>用户管理</string>
+   </property>
+  </action>
+  <action name="actionorder">
+   <property name="text">
+    <string>order</string>
+   </property>
+  </action>
+  <action name="actionsdf">
+   <property name="text">
+    <string>订单管理</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
